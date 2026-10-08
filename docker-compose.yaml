@@ -1,7 +1,8 @@
 # 千问语音试听台
-# 1. 在 backend/.env 填入 DASHSCOPE_API_KEY。北京业务空间建议再填 WORKSPACE_ID。
-# 2. docker compose up --build
-# 3. 打开 http://localhost:8080
+# 1. 复制 backend/.env.example 为 backend/.env，填入 DASHSCOPE_API_KEY。北京业务空间建议再填 WORKSPACE_ID。
+# 2. 复制 web/.env.example 为 web/.env。
+# 3. docker compose up --build
+# 4. 打开 http://localhost:8080
 
 services:
   backend:
