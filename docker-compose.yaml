@@ -1,0 +1,41 @@
+# 千问语音试听台
+# 1. 在 backend/.env 填入 DASHSCOPE_API_KEY。北京业务空间建议再填 WORKSPACE_ID。
+# 2. docker compose up --build
+# 3. 打开 http://localhost:8080
+
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - tts-data:/data
+    expose:
+      - "8000"
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 8s
+
+  web:
+    build: ./web
+    env_file:
+      - ./web/.env
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  tts-data:

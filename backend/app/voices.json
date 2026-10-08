@@ -1,0 +1,101 @@
+{
+  "model": "qwen-audio-3.1-tts-flash",
+  "groups": [
+    {
+      "id": "multilingual",
+      "name": "多语种与方言",
+      "note": "这四个音色都支持上海话、广东话、东北话、重庆话、陕西话、云南话、宁波话、甘肃话，以及日语、韩语、法语、德语、葡萄牙语、意大利语、越南语、印尼语。方言和外语可以用指令控制，例如「用重庆话说」。",
+      "voices": [
+        {"name": "龙安欢", "voice": "longanhuan_v3.1", "gender": "女", "trait": "重庆话、宁波话、韩语、印尼语", "scene": "多语种与方言", "languages": ["中文普通话", "方言", "多语种"], "preview": "zh"},
+        {"name": "龙安灵心", "voice": "longanlingxin_v3.1", "gender": "女", "trait": "云南话、陕西话、上海话、法语、意大利语", "scene": "多语种与方言", "languages": ["中文普通话", "方言", "多语种"], "preview": "zh"},
+        {"name": "龙安风悦", "voice": "longanfengyue_v3.1", "gender": "女", "trait": "东北话、越南语、日语", "scene": "多语种与方言", "languages": ["中文普通话", "方言", "多语种"], "preview": "zh"},
+        {"name": "许南川", "voice": "xunanchuan_v3.1", "gender": "男", "trait": "甘肃话、东北话、法语、葡萄牙语", "scene": "多语种与方言", "languages": ["中文普通话", "方言", "多语种"], "preview": "zh"}
+      ]
+    },
+    {
+      "id": "chinese",
+      "name": "精品中文",
+      "note": "仅支持中文普通话。",
+      "voices": [
+        {"name": "于小云", "voice": "yuxiaoyun_v3.1", "gender": "女", "trait": "元气、亲切、自然", "scene": "广告营销、广播、客服、旁白", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "乔小娇", "voice": "qiaoxiaojiao_v3.1", "gender": "女", "trait": "俏丽、可爱", "scene": "广告营销、客服、有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "夏小晨", "voice": "xiaxiaochen_v3.1", "gender": "女", "trait": "元气、明亮", "scene": "广告营销、有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "安明远", "voice": "anmingyuan_v3.1", "gender": "男", "trait": "清亮、自然", "scene": "广告营销、有声书、旁白", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "温怀清", "voice": "wenhuaiqing_v3.1", "gender": "女", "trait": "清亮、柔和", "scene": "儿童故事、客服、新闻播报", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "安小岚", "voice": "anxiaolan_v3.1", "gender": "女", "trait": "清甜、纯净", "scene": "有声书、客服、新闻播报", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "谢舒柔", "voice": "xieshurou_v3.1", "gender": "女", "trait": "柔和、自然、知性", "scene": "有声书、客服、旁白", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "白清岚", "voice": "baiqinglan_v3.1", "gender": "女", "trait": "明亮、清纯", "scene": "语音助手、客服", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "许玉远", "voice": "xuyuyuan_v3.1", "gender": "女", "trait": "知性、成熟、质感", "scene": "广告、新闻、旁白、有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "安若柔", "voice": "anruorou_v3.1", "gender": "女", "trait": "气声、知性", "scene": "旁白、语音助手", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "闻怀之", "voice": "wenhuaizhi_v3.1", "gender": "女", "trait": "稳重、成熟", "scene": "有声书、新闻、客服", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "萧行之", "voice": "xiaoxingzhi_v3.1", "gender": "女", "trait": "端庄、贵气", "scene": "新闻播报、有声书、旁白", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "顾云舒", "voice": "guyunshu_v3.1", "gender": "女", "trait": "成熟、稳重", "scene": "音乐电台、客服、有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "霍拙石", "voice": "huozhuoshi_v3.1", "gender": "男", "trait": "清亮", "scene": "有声书、广告、旁白", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "叶清禾", "voice": "yeqinghe_v3.1", "gender": "女", "trait": "亲切、温柔", "scene": "有声书、广告、客服", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "云欢欢", "voice": "yunhuanhuan_v3.1", "gender": "女", "trait": "高亢、热情", "scene": "有声书、旁白、客服", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "徐小俏", "voice": "xuxiaoqiao_v3.1", "gender": "女", "trait": "自然、俏皮", "scene": "有声书、旁白、客服", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "白安然", "voice": "baianran_v3.1", "gender": "女", "trait": "低沉、浑厚、气声", "scene": "配音讲解、有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "许言初", "voice": "xuyanchu_v3.1", "gender": "女", "trait": "沉稳、磁性", "scene": "新闻播报、有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "叶知晴", "voice": "yezhiqing_v3.1", "gender": "女", "trait": "轻快、自然", "scene": "儿童故事、客服、语音助手", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "安迪", "voice": "andi_v3.1", "gender": "男", "trait": "ABC 口音", "scene": "语音助手", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "安语晴", "voice": "anyuqing_v3.1", "gender": "女", "trait": "甜妹", "scene": "语音助手、旁白、新闻播报", "languages": ["中文普通话"], "preview": "zh"}
+      ]
+    },
+    {
+      "id": "english",
+      "name": "精品英文",
+      "note": "仅支持英文。",
+      "voices": [
+        {"name": "Emily", "voice": "Emily_v3.1", "gender": "女", "trait": "英式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Luna", "voice": "Luna_v3.1", "gender": "女", "trait": "英式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Eric", "voice": "Eric_v3.1", "gender": "男", "trait": "英式男声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Luca", "voice": "Luca_v3.1", "gender": "男", "trait": "英式男声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Abby", "voice": "Abby_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Annie", "voice": "Annie_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Ava", "voice": "Ava_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Beth", "voice": "Beth_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Betty", "voice": "Betty_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Cally", "voice": "Cally_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Cindy", "voice": "Cindy_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Donna", "voice": "Donna_v3.1", "gender": "女", "trait": "美式女声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Andy", "voice": "Andy_v3.1", "gender": "男", "trait": "美式男声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "Brian", "voice": "Brian_v3.1", "gender": "男", "trait": "美式男声", "scene": "英文", "languages": ["英文"], "preview": "en"},
+        {"name": "David", "voice": "David_v3.1", "gender": "男", "trait": "美式男声", "scene": "英文", "languages": ["英文"], "preview": "en"}
+      ]
+    },
+    {
+      "id": "more",
+      "name": "其他系统音色",
+      "note": "角色音、童声和场景音色。voice 值区分大小写。",
+      "voices": [
+        {"name": "龙安元妃", "voice": "longanyuanfei_v3.1", "gender": "女", "trait": "高傲妃子音", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙杰力豆", "voice": "longjielidou_v3.1", "gender": "男", "trait": "天真男童音", "scene": "儿童陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安灵希", "voice": "longanlingxi_v3.1", "gender": "女", "trait": "可爱甜美音", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙火火", "voice": "longhuohuo_v3.1", "gender": "男", "trait": "顽皮少年音", "scene": "角色音", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙应桃", "voice": "longyingtao_v3.1", "gender": "女", "trait": "温柔淡定女", "scene": "客服", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安雅", "voice": "longanya_v3.1", "gender": "女", "trait": "高雅气质女", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙婉", "voice": "longwan_v3.1", "gender": "女", "trait": "细腻柔声女", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙星", "voice": "longxing_v3.1", "gender": "女", "trait": "温婉邻家女", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙华", "voice": "longhua_v3.1", "gender": "女", "trait": "元气甜美女", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙寒", "voice": "longhan_v3.1", "gender": "男", "trait": "温暖痴情男", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安智", "voice": "longanzhi_v3.1", "gender": "男", "trait": "睿智轻熟男", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙哲", "voice": "longzhe_v3.1", "gender": "男", "trait": "呆板大暖男", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安洋", "voice": "longanyang_v3.1", "gender": "男", "trait": "阳光大男孩", "scene": "社交陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "李白", "voice": "libai_v3.1", "gender": "男", "trait": "古代诗仙男", "scene": "诗词朗诵", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙铃", "voice": "longling_v3.1", "gender": "女", "trait": "稚气呆板女", "scene": "童声", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙牛牛", "voice": "longniuniu_v3.1", "gender": "男", "trait": "阳光男童声", "scene": "儿童有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙闪闪", "voice": "longshanshan_v3.1", "gender": "男", "trait": "戏剧化童声", "scene": "儿童有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙泡泡", "voice": "longpaopao_v3.1", "gender": "女", "trait": "飞天泡泡音", "scene": "儿童陪伴", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "loongstella", "voice": "loongstella_v3.1", "gender": "女", "trait": "飒爽利落女", "scene": "新闻播报", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙媛", "voice": "longyuan_v3.1", "gender": "女", "trait": "温暖治愈女", "scene": "有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙妙", "voice": "longmiao_v3.1", "gender": "女", "trait": "抑扬顿挫女", "scene": "有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙三叔", "voice": "longsanshu_v3.1", "gender": "男", "trait": "沉稳质感男", "scene": "有声书", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安莉", "voice": "longanli_v3.1", "gender": "女", "trait": "利落从容女", "scene": "语音助手", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安温", "voice": "longanwen_v3.1", "gender": "女", "trait": "优雅知性女", "scene": "语音助手", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安朗", "voice": "longanlang_v3.1", "gender": "男", "trait": "清爽利落男", "scene": "语音助手", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙小夏", "voice": "longxiaoxia_v3.1", "gender": "女", "trait": "沉稳权威女", "scene": "语音助手", "languages": ["中文普通话"], "preview": "zh"},
+        {"name": "龙安冲", "voice": "longanchong_v3.1", "gender": "男", "trait": "激情推销男", "scene": "直播带货", "languages": ["中文普通话"], "preview": "zh"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>千问语音试听</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="eyebrow">qwen-audio-3.1-tts-flash</p>
+      <h1>语音试听台</h1>
+    </div>
+    <p id="key-status" class="key-status">正在检查接口…</p>
+  </header>
+
+  <main class="layout">
+    <section class="composer" aria-label="合成">
+      <label class="field" for="text">要说的话</label>
+      <textarea id="text" maxlength="2000" rows="7">你好，欢迎试听通义千问语音合成。今天的天气很好，适合出去走走。</textarea>
+      <p class="hint"><span id="count">0</span> / 2000 · Ctrl + Enter 合成</p>
+
+      <p class="current">当前音色 <strong id="current-name">龙安欢</strong> <code id="current-id">longanhuan_v3.1</code></p>
+
+      <div class="sliders">
+        <label>语速 <output id="rate-out">1.0</output>
+          <input id="rate" type="range" min="0.5" max="2" step="0.1" value="1">
+        </label>
+        <label>音量 <output id="volume-out">50</output>
+          <input id="volume" type="range" min="0" max="100" step="1" value="50">
+        </label>
+        <label>音调 <output id="pitch-out">1.0</output>
+          <input id="pitch" type="range" min="0.5" max="2" step="0.1" value="1">
+        </label>
+      </div>
+
+      <label class="field" for="instruction">指令</label>
+      <input id="instruction" type="text" maxlength="300" placeholder="例如：用重庆话说，语气温柔一点">
+
+      <label class="field" for="language">合成语种</label>
+      <select id="language"></select>
+
+      <div class="actions">
+        <button id="speak" type="button">合成并播放</button>
+        <button id="stop" type="button" class="ghost">停止</button>
+      </div>
+      <p id="status" class="status" role="status">准备就绪</p>
+      <p id="sentence" class="sentence"></p>
+      <p id="usage" class="hint"></p>
+    </section>
+
+    <section class="library" aria-label="音色">
+      <div class="library-head">
+        <h2>音色</h2>
+        <button id="reload" type="button" class="ghost">刷新</button>
+      </div>
+      <div class="filters">
+        <div id="groups" class="chips" role="tablist"></div>
+        <div class="chips" id="genders">
+          <button type="button" class="chip is-on" data-gender="all">全部</button>
+          <button type="button" class="chip" data-gender="女">女声</button>
+          <button type="button" class="chip" data-gender="男">男声</button>
+        </div>
+        <input id="search" type="search" placeholder="搜索名称、特质或 voice">
+      </div>
+      <p id="group-note" class="note"></p>
+      <p id="remote-error" class="banner" hidden></p>
+      <div id="voices" class="voice-grid"></div>
+
+      <form id="clone-form" class="clone">
+        <h2>复刻音色</h2>
+        <p class="note">复刻音频必须是百炼服务器能访问的公网地址。wav、mp3 或 m4a，建议 10 到 20 秒清晰人声。本地上传只有在 backend/.env 配置了 PUBLIC_BASE_URL 时才会提交。</p>
+        <div class="clone-grid">
+          <label>前缀
+            <input id="clone-prefix" name="prefix" maxlength="10" placeholder="myvoice" required pattern="[A-Za-z0-9]{1,10}">
+          </label>
+          <label>显示名
+            <input id="clone-name" name="display_name" maxlength="40" placeholder="我的声音">
+          </label>
+          <label>样本语种
+            <select id="clone-language" name="language"></select>
+          </label>
+        </div>
+        <label class="field" for="clone-url">公网音频 URL</label>
+        <input id="clone-url" name="url" type="url" placeholder="https://example.com/voice.wav">
+        <label class="file">
+          <input id="clone-file" name="file" type="file" accept=".wav,.mp3,.m4a,audio/wav,audio/mpeg,audio/mp4">
+          <span>或选择本地音频</span>
+        </label>
+        <button id="clone-submit" type="submit">创建复刻音色</button>
+        <p id="clone-message" class="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
